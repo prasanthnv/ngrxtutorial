@@ -1,0 +1,11 @@
+<h5>Directory</h5>
+<table>
+  <tr *ngFor="let direct of directory$ | async ; let i = index">
+    <td>{{direct.name}}</td>
+    <td>{{direct.email}}</td>
+    <td>{{direct.phone}}</td>
+    <td>
+      <button (click)="removeDir(i)">Remove</button>
+    </td>
+  </tr>
+</table>
